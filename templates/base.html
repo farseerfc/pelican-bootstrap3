@@ -12,12 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    {% if 'farseerfc.me' in SITEURL %}
-    <!-- See: https://googlechrome.github.io/samples/csp-upgrade-insecure-requests/index.html -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    {% endif %}
-    
+   
     {% if 'liquid_tags.notebook' in PLUGINS %}
         {% include 'includes/liquid_tags_nb_header.html' %}
     {% endif %}
