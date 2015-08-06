@@ -24,16 +24,16 @@ ripples = Command('static/css/ripples.min.css', 'static/material/ripples.less',
 
 Command(trans_target, trans_source,
         ["opencc -c opencc-t2s.json -i translations/zh_HK/LC_MESSAGES/messages.po -o translations/zh_CN/LC_MESSAGES/messages.po",
-         "pybabel compile --directory translations/ --domain messages"])
+         "py3babel compile --directory translations/ --domain messages"])
 
 Command(trans_source, "messages.pot",
-        "pybabel update --input-file messages.pot --output-dir translations/ --domain messages")
+        "py3babel update --input-file messages.pot --output-dir translations/ --domain messages")
 
 Command('messages.pot',
         Glob('templates/*.html') +
         Glob('templates/includes/*.html') +
         ["babel.cfg"],
-        'pybabel extract --mapping babel.cfg --output messages.pot ./')
+        'py3babel extract --mapping babel.cfg --output messages.pot ./')
 
 Alias("less", [bootstrap, material, ripples])
 Default("less", "trans")

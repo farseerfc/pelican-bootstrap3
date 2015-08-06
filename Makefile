@@ -17,12 +17,12 @@ trans: $(patsubst %/messages.po,%/messages.mo,$(TRANS_TARGET))
 
 %/messages.mo: %/messages.po
 	opencc -c opencc-t2s.json -i translations/zh_HK/LC_MESSAGES/messages.po -o translations/zh_CN/LC_MESSAGES/messages.po
-	pybabel compile --directory translations/ --domain messages
+	py3babel compile --directory translations/ --domain messages
 
 %/messages.po: messages.pot
-	pybabel update --input-file messages.pot --output-dir translations/ --domain messages
+	py3babel update --input-file messages.pot --output-dir translations/ --domain messages
 
 messages.pot: templates/*.html templates/includes/*.html babel.cfg
-	pybabel extract --mapping babel.cfg --output messages.pot ./
+	py3babel extract --mapping babel.cfg --output messages.pot ./
 
 .PHONY: less all trans
