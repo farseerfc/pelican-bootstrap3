@@ -1,6 +1,7 @@
 {% extends "base.html" %}
+{% set sitelangname = dict(zh_HK='zh-Hant', zh_CN="zh-Hans", ja_JP='ja', en_US='en-us') %}
 {% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
-{% block html_lang %}{{ article.lang }}{% endblock %}
+{% block html_lang %}{{ sitelangname[article.lang] }}{% endblock %}
 {% block meta %}
     {% if article.author %}
         <meta name="author" content="{{ article.author }}" />
