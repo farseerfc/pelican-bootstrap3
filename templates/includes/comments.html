@@ -4,7 +4,7 @@
       <div class="panel panel-primary">
         <div class="panel-heading" role="tab" id="disqus-heading">
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#disqus-comments" aria-expanded="false" aria-controls="disqus-comments">
+            <a data-toggle="collapse" data-parent="#accordion" href="#disqus-comments" aria-expanded="true" aria-controls="disqus-comments">
               <i class="fa fa-comments-o"></i> Disqus {% trans %}comments{% endtrans %}
             </a>
           </h4>
@@ -52,60 +52,5 @@
         </div>
       </div>
       {% endif %}
-      {% if WEIBO_APPKEY %}
-      <div class="panel panel-primary">
-        <div class="panel-heading" role="tab" id="weibo-heading">
-          <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#weibo-comments" aria-expanded="false" aria-controls="weibo-comments">
-              <i class="fa fa-weibo"></i> Weibo {% trans %}comments{% endtrans %}
-            </a>
-          </h4>
-        </div>
-        <div id="weibo-comments" class="panel-collapse collapse" role="tabpanel" aria-labelledby="weibo-heading">
-          <div class="panel-body">
-                <wb:comments url="auto" width="auto" language="zh_tw" appkey="WEIBO_APPKEYN" ></wb:comments>
-          </div>
-        </div>
-      </div>
-      {% endif %}
-      <div class="panel panel-primary">
-        <div class="panel-heading" role="tab" id="ds-heading">
-          <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ds-comments" aria-expanded="false" aria-controls="ds-comments">
-              <i class="fa fa-comments-o"></i> Duoshuo {%trans %}comments{% endtrans %}
-            </a>
-          </h4>
-        </div>
-        <div id="ds-comments" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ds-heading">
-          <div class="panel-body">
-                <!-- 多说评论框 start -->
-                    <div class="ds-thread" 
-                    {% if article %}
-                        data-thread-key="{{article.slug}}" 
-                        data-title="{{article.title}}" 
-                        data-url="http:{{ SITEURL }}/{{ article.url }}"
-                    {% elif page %}
-                        data-thread-key="{{page.slug}}" 
-                        data-title="{{page.title}}" 
-                        data-url="http:{{ SITEURL }}/{{ page.slug }}.html"
-                    {% endif %}
-                    ></div>
-                <!-- 多说评论框 end -->
-                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-                <script type="text/javascript">
-                var duoshuoQuery = {short_name:"farseerfc"};
-                    (function() {
-                        var ds = document.createElement('script');
-                        ds.type = 'text/javascript';ds.async = true;
-                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-                        ds.charset = 'UTF-8';
-                        (document.getElementsByTagName('head')[0] 
-                         || document.getElementsByTagName('body')[0]).appendChild(ds);
-                    })();
-                    </script>
-                <!-- 多说公共JS代码 end -->
-          </div>
-        </div>
-      </div>
     </div>
 </section>
