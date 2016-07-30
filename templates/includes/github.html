@@ -9,7 +9,9 @@
             <p class="list-group-item">Status updating...</p>
         </div>
         {% if GITHUB_SHOW_USER_LINK is defined %}
-            <a href="https://github.com/{{ GITHUB_USER }}">@{{ GITHUB_USER }}</a> on GitHub
+            <a href="https://github.com/{{ GITHUB_USER }}">@{{ GITHUB_USER }}</a> on GitHub<br>
+            <div style="margin:-10px" class="github-card" data-github="{{ GITHUB_USER }}" data-width="200" data-theme="medium"></div>
+			<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
         {% endif %}
     </div>
 {% endblock sidebarcontent %}
