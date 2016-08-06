@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-01-31 19:00+0900\n"
+"POT-Creation-Date: 2016-08-06 21:12+0900\n"
 "PO-Revision-Date: 2014-12-10 19:22+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -131,10 +131,25 @@ msgstr "このページの印刷版PDFファイルを表示する"
 msgid "Show captured png of this page"
 msgstr "このページのスクリーンショットPNGファイルを表示する"
 
-#: templates/includes/comments.html:8 templates/includes/comments.html:60
-#: templates/includes/comments.html:75
+#: templates/includes/comments.html:12 templates/includes/comments.html:54
 msgid "comments"
 msgstr "コメント"
+
+#: templates/includes/comments.html:19
+msgid "Leave a comment from "
+msgstr "GitHub アカウントで"
+
+#: templates/includes/comments.html:19
+msgid " this post's issue page "
+msgstr "この文章のIssueページ"
+
+#: templates/includes/comments.html:19
+msgid " using your Github account."
+msgstr "にコメントしてください"
+
+#: templates/includes/comments.html:32
+msgid "left a comment on"
+msgstr "コメントした"
 
 #: templates/includes/footer.html:13
 msgid "Powered by"
