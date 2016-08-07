@@ -48,6 +48,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       }
       $("#githubissue_comments").append("<div class='media'><div class='media-left'><a href=\""+ cuserlink +'\"><img src="' + cavatarlink + '" width="48" class="media-object">' + "</a></div><div class='media-body'><h4 class='media-heading'><a class='commentuser' href=\""+ cuserlink + "\">" + cuser + "</a><small>&nbsp; {% trans %}left a comment on{% endtrans %} &nbsp;<a class='commentdate' href=\"" + clink + "\">" + cdate + "</a></small>&nbsp;"+ creactions + "</h4><div class='commentbody markdown-body'>" + cbody + "</div></div>");
+      $(".email-hidden-toggle > a").on("click", function (e){
+        e.preventDefault();
+        $(".email-hidden-reply", this.parent).toggle();
+      });
     }
   }
   $.ajax("https://api.github.com/repos/{{ GITHUB_REPO }}/issues/{{page.issueid}}/comments", {

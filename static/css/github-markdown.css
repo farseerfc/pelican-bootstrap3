@@ -695,3 +695,15 @@
 .markdown-body hr {
   border-bottom-color: #eee;
 }
+
+.email-fragment {
+  white-space: pre-wrap;
+}
+
+.email-quoted-reply, .email-signature-reply {
+  white-space: pre-wrap;
+  padding: 0 15px;
+  margin: 15px 0;
+  color: #767676;
+  border-left: 4px solid #ddd;
+}
