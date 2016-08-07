@@ -16,24 +16,42 @@
         <div id="githubissue-comments" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="githubissue-heading">
           <div class="panel-body">
             <div class="tab-pane fade active in" id="githubissue-comments">
-{% trans %}Leave a comment from {% endtrans %}<a class="btn btn-default withripple" href="https://github.com/{{ GITHUB_REPO }}/issues/{{page.issueid}}" target="_blank">{% trans %} this post's issue page {% endtrans %}</a>{% trans %} using your Github account.{% endtrans %}
+{% trans %}Leave a comment from {% endtrans %}<a class="btn btn-primary withripple" href="https://github.com/{{ GITHUB_REPO }}/issues/{{page.issueid}}" target="_blank">{% trans %} this post's issue page {% endtrans %}</a>{% trans %} using your Github account.{% endtrans %}
                 <div id="githubissue_comments"></div>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(event) {
+  var reaction_fa = {
+    "+1": "thumbs-o-up",
+    "-1": "thumbs-o-down",
+    "laugh": "smile-o",
+    "hooray": "gift",
+    "confused": "frown-o",
+    "heart": "heart-o"
+  };
+
   function loadComments(data) {
     for (var i=0; i<data.length; i++) {
       var cuser = data[i].user.login;
       var cuserlink = "https://github.com/" + data[i].user.login;
       var clink = "https://github.com/{{ GITHUB_REPO }}/issues/{{page.issueid}}#issuecomment-" + data[i].url.substring(data[i].url.lastIndexOf("/")+1);
-      var cbody = data[i].body_html;
+      var cbody = data[i].body_html || data[i].body;
       var cavatarlink = data[i].user.avatar_url;
       var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' };
       var cdate = new Date(data[i].created_at).toLocaleString("{{ datelangname[article.lang if article else DEFAULT_LANG] }}", options);
-      $("#githubissue_comments").append("<hr><div class='media'><div class='media-left'><a href=\""+ cuserlink +'\"><img src="' + cavatarlink + '" width="48" class="media-object">' + "</a></div><div class='media-body'><h4 class='media-heading'><a class='commentuser' href=\""+ cuserlink + "\">" + cuser + "</a><small>&nbsp; {% trans %}left a comment on{% endtrans %} &nbsp;<a class='commentdate' href=\"" + clink + "\">" + cdate + "</a></small></h4><div class='commentbody'>" + cbody + "</div></div>");
+      var reactions = data[i].reactions;
+      var creactions = "";
+      if(reactions){
+        for(reactionkey in reaction_fa){
+          if(reactions[reactionkey] > 0) {
+              creactions += '<i class="fa fa-'+ reaction_fa[reactionkey]+'"></i>' + reactions[reactionkey] + "&nbsp;";
+          }
+        }
+      }
+      $("#githubissue_comments").append("<hr><div class='media'><div class='media-left'><a href=\""+ cuserlink +'\"><img src="' + cavatarlink + '" width="48" class="media-object">' + "</a></div><div class='media-body'><h4 class='media-heading'><a class='commentuser' href=\""+ cuserlink + "\">" + cuser + "</a><small>&nbsp; {% trans %}left a comment on{% endtrans %} &nbsp;<a class='commentdate' href=\"" + clink + "\">" + cdate + "</a></small>&nbsp;"+ creactions + "</h4><div class='commentbody'>" + cbody + "</div></div>");
     }
   }
   $.ajax("https://api.github.com/repos/{{ GITHUB_REPO }}/issues/{{page.issueid}}/comments", {
-    headers: {Accept: "application/vnd.github.full+json"},
+    headers: {Accept: "application/vnd.github.squirrel-girl-preview.full+json"},
     dataType: "json",
     success: function(msg){
       loadComments(msg);
