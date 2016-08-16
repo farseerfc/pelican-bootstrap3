@@ -26,12 +26,12 @@
     <meta name="msapplication-navbutton-color" content="#6b5594">
     <meta name="apple-mobile-web-app-status-bar-style" content="#6b5594">
     <link rel="manifest" href="/manifest.json">
-    {% if FAVICON_IE %}
-    <!--[if IE]><link rel="shortcut icon" href="{{ SITEURL }}/{{ FAVICON_IE }}"><![endif]-->
-    {% endif %}
-    {% if TOUCHICON %}
-    <link rel="apple-touch-icon" href="{{ SITEURL }}/{{ TOUCHICON }}">
-    {% endif %}
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="{{ SITEURL }}/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ SITEURL }}/images/favicon-16x16.png" sizes="16x16">
+<link rel="mask-icon" href="{{ SITEURL }}/images/safari-pinned-tab.svg" color="#603cba">
 
     {% block canonical_rel %}{% endblock %}
 
