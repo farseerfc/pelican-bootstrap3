@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-07 23:12+0900\n"
+"POT-Creation-Date: 2016-08-16 22:33+0900\n"
 "PO-Revision-Date: 2014-12-10 19:24+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -99,7 +99,7 @@ msgid "Show source code of this page"
 msgstr ""
 
 #: templates/tag.html:11 templates/tags.html:8
-#: templates/includes/sidebar_tags.html:3
+#: templates/includes/sidebar_tags.html:4
 msgid "Tags"
 msgstr ""
 
