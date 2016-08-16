@@ -11,5 +11,4 @@ output
 *.ipr
 *.iml
 *.iws
-messages.mo
 .sconsign.dblite
