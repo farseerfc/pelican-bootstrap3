@@ -1,0 +1,10 @@
+{% extends "includes/sidebar_item.html" %}
+{% block sidebarxs %}hidden-xs{% endblock sidebarxs %}
+{% block sidebartitle %}
+<i class="fa fa-usd fa-lg"></i><span class="icon-label">{% trans %}Promotions{% endtrans %}</span>
+{% endblock sidebartitle %}
+{% block sidebarcontent %}
+    <div class="panel-body">
+        {{ SIDEBAR_PROMOTION | safe }}
+    </div>
+{% endblock sidebarcontent %}
