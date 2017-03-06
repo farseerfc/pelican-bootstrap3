@@ -159,7 +159,7 @@
                             <i class="fa fa-user"></i><span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            {% for p in PAGES %}
+                            {% for p in pages %}
                              <li class="{% if p == page %} active{% endif %}"><a href="{{ SITEURL }}/{{ p.url }}"><i class="fa fa-user"></i>
                                  {{ p.menulabel|default(p.title) }}
                               </a></li>
@@ -168,7 +168,7 @@
                     </li>
 
                   <ul class="nav navbar-nav hidden-xs hidden-sm">
-                    {% for p in PAGES %}
+                    {% for p in pages %}
                      <li class="{% if p == page %} active{% endif %}"><a href="{{ SITEURL }}/{{ p.url }}"><i class="fa fa-user"></i>
                          {{ p.menulabel|default(p.title) }}
                       </a></li>
