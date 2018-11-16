@@ -7,15 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-17 01:38+0900\n"
+"POT-Creation-Date: 2018-11-17 02:25+0900\n"
 "PO-Revision-Date: 2014-12-10 19:25+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_HK\n"
 "Language-Team: zh_Hant_HK <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.2\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: templates/archives.html:2
 #, python-format
@@ -94,12 +95,12 @@ msgstr "全部文章"
 msgid "Atom feeds for all articles"
 msgstr "订阅全部文章"
 
-#: templates/page.html:59 templates/includes/article_info.html:24
+#: templates/includes/article_info.html:19 templates/page.html:59
 msgid "Show source code of this page"
 msgstr "显示这篇文章的源文件"
 
-#: templates/tag.html:11 templates/tags.html:8
-#: templates/includes/sidebar_tags.html:4
+#: templates/includes/sidebar_tags.html:4 templates/tag.html:11
+#: templates/tags.html:8
 msgid "Tags"
 msgstr "标签云"
 
@@ -123,11 +124,11 @@ msgstr "%(SITENAME)s 的全部标签"
 msgid "About %(AUTHOR)s"
 msgstr "关于 %(AUTHOR)s"
 
-#: templates/includes/article_info.html:25
+#: templates/includes/article_info.html:20
 msgid "Show pdf version of this page"
 msgstr "显示这篇文章的印刷版PDF文件"
 
-#: templates/includes/article_info.html:26
+#: templates/includes/article_info.html:21
 msgid "Show captured png of this page"
 msgstr "显示这篇文章的截图PNG文件"
 
@@ -166,6 +167,10 @@ msgstr "GitHub仓库"
 #: templates/includes/links.html:3
 msgid "Links"
 msgstr "友情链接"
+
+#: templates/includes/promotion.html:4
+msgid "Promotions"
+msgstr ""
 
 #: templates/includes/twitter_timeline.html:4
 msgid "Latest Tweets"
