@@ -1,4 +1,4 @@
-# Chinese (Traditional, Hong Kong SAR China) translations for PROJECT.
+# English translations for PROJECT.
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-11-17 02:25+0900\n"
-"PO-Revision-Date: 2014-12-10 19:25+0900\n"
+"POT-Creation-Date: 2018-11-18 22:59+0900\n"
+"PO-Revision-Date: 2014-12-10 19:24+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_HK\n"
-"Language-Team: zh_Hant_HK <LL@li.org>\n"
+"Language: en_US\n"
+"Language-Team: en <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -21,152 +21,152 @@ msgstr ""
 #: templates/archives.html:2
 #, python-format
 msgid "Archives - %(SITENAME)s"
-msgstr "歸檔 - %(SITENAME)s"
+msgstr ""
 
 #: templates/archives.html:7
 msgid "Archives"
-msgstr "歸檔"
+msgstr ""
 
 #: templates/archives.html:14
 #, python-format
 msgid "Archives for %(SITENAME)s"
-msgstr "%(SITENAME)s 的歸檔"
+msgstr ""
 
 #: templates/article.html:78 templates/article.html:111
 msgid "Table of Contents"
-msgstr "目錄"
+msgstr ""
 
 #: templates/article.html:97
 #, python-format
 msgid "Permalink to %(title)s"
-msgstr "到 %(title)s 的永久鏈接"
+msgstr ""
 
 #: templates/article.html:152
 #, python-format
 msgid "This is part %(index)s of the \"%(name)s\" series:"
-msgstr "這篇文章是 \"%(name)s\" 系列文章的第 %(index)s 篇："
+msgstr ""
 
 #: templates/author.html:3
 #, python-format
 msgid "Articles by %(author)s - %(SITENAME)s"
-msgstr "%(author)s 撰寫的文章 - %(SITENAME)s"
+msgstr ""
 
 #: templates/authors.html:3
 #, python-format
 msgid "Authors - %(SITENAME)s"
-msgstr "作者 - %(SITENAME)s"
+msgstr ""
 
 #: templates/base.html:120
 msgid "Toggle navigation"
-msgstr "切換導航"
+msgstr ""
 
 #: templates/base.html:216 templates/base.html:226 templates/search.html:4
 msgid "Search"
-msgstr "搜索"
+msgstr ""
 
 #: templates/base.html:233
 msgid "All"
-msgstr "歸檔"
+msgstr "All"
 
 #: templates/categories.html:2
 #, python-format
 msgid "Categories - %(SITENAME)s"
-msgstr "全部分類 - %(SITENAME)s"
+msgstr ""
 
 #: templates/categories.html:8 templates/category.html:11
 msgid "Categories"
-msgstr "全部分類"
+msgstr ""
 
 #: templates/categories.html:15
 #, python-format
 msgid "All Categories for %(SITENAME)s"
-msgstr "%(SITENAME)s 的全部分類"
+msgstr ""
 
 #: templates/category.html:13
 #, python-format
 msgid "Feeds for category %(tag)s"
-msgstr "訂閱分類 %(tag)s"
+msgstr ""
 
 #: templates/index.html:12
 msgid "All Articles"
-msgstr "全部文章"
+msgstr ""
 
 #: templates/index.html:13
 msgid "Atom feeds for all articles"
-msgstr "訂閱全部文章"
+msgstr "Atom feeds for all articles"
 
 #: templates/includes/article_info.html:19 templates/page.html:59
 msgid "Show source code of this page"
-msgstr "顯示這篇文章的源文件"
+msgstr ""
 
 #: templates/includes/sidebar_tags.html:4 templates/tag.html:11
 #: templates/tags.html:8
 msgid "Tags"
-msgstr "標籤雲"
+msgstr ""
 
 #: templates/tag.html:13
 #, python-format
 msgid "Feeds for tag %(tag)s"
-msgstr "訂閱標籤 %(tag)s"
+msgstr ""
 
 #: templates/tags.html:2
 #, python-format
 msgid "Tags - %(SITENAME)s"
-msgstr "全部標籤 - %(SITENAME)s"
+msgstr ""
 
 #: templates/tags.html:15
 #, python-format
 msgid "Tags for %(SITENAME)s"
-msgstr "%(SITENAME)s 的全部標籤"
+msgstr ""
 
 #: templates/includes/aboutme.html:5
 #, python-format
 msgid "About %(AUTHOR)s"
-msgstr "關於 %(AUTHOR)s"
+msgstr "About %(AUTHOR)s"
 
 #: templates/includes/article_info.html:20
 msgid "Show pdf version of this page"
-msgstr "顯示這篇文章的印刷版PDF文件"
+msgstr ""
 
 #: templates/includes/article_info.html:21
 msgid "Show captured png of this page"
-msgstr "顯示這篇文章的截圖PNG文件"
+msgstr ""
 
 #: templates/includes/comments.html:12 templates/includes/comments.html:76
 msgid "comments"
-msgstr "留言"
+msgstr ""
 
 #: templates/includes/comments.html:19
 msgid "Leave a comment from "
-msgstr "請用你的 GitHub 賬戶登錄並在"
+msgstr ""
 
 #: templates/includes/comments.html:19
 msgid " this post's issue page "
-msgstr "這篇文章的 Issue 頁下"
+msgstr ""
 
 #: templates/includes/comments.html:19
 msgid " using your Github account."
-msgstr "留言"
+msgstr ""
 
 #: templates/includes/comments.html:50
 msgid "left a comment on"
-msgstr "留言於"
+msgstr ""
 
 #: templates/includes/footer.html:13
 msgid "Powered by"
-msgstr "通過"
+msgstr ""
 
 #: templates/includes/footer.html:14
 msgid "generator"
-msgstr "生成"
+msgstr ""
 
 #: templates/includes/github.html:4
 msgid "GitHub Repos"
-msgstr "GitHub倉庫"
+msgstr ""
 
 #: templates/includes/links.html:3
 msgid "Links"
-msgstr "友情鏈接"
+msgstr ""
 
 #: templates/includes/promotion.html:4
 msgid "Promotions"
@@ -174,18 +174,36 @@ msgstr ""
 
 #: templates/includes/twitter_timeline.html:4
 msgid "Latest Tweets"
-msgstr "最新推文"
+msgstr ""
 
 #: templates/includes/weibo.html:4
 msgid "Latest Weibo"
-msgstr "最新微博"
+msgstr ""
+
+#~ msgid "Permalink to %(title)s"
+#~ msgstr ""
+
+#~ msgid "This is part %(index)s of the \"%(name)s\" series:"
+#~ msgstr ""
+
+#~ msgid "Source Code"
+#~ msgstr ""
 
 #~ msgid "Top"
-#~ msgstr "回頁首"
+#~ msgstr "Top"
 
 #~ msgid "and"
-#~ msgstr "以及"
+#~ msgstr ""
+
+#~ msgid " generator "
+#~ msgstr ""
+
+#~ msgid "Show captured pngof this page"
+#~ msgstr ""
 
 #~ msgid "commented on"
-#~ msgstr "留言於"
+#~ msgstr ""
+
+#~ msgid "leave a comment on"
+#~ msgstr ""
 

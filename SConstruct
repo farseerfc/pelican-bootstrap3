@@ -1,4 +1,4 @@
-langs = "en_US,ja_JP,zh_HK,zh_CN".split(',')
+langs = "en,jp,zh,zhs".split(',')
 
 trans_source = map(lambda x: 'translations/'+x+'/LC_MESSAGES/messages.po', langs)
 trans_target = list(map(lambda x: x[:-2]+"mo", trans_source))
@@ -23,7 +23,7 @@ ripples = Command('static/css/ripples.min.css', 'static/material/ripples.less',
                   'lessc -x static/material/ripples.less > ${TARGET}')
 
 Command(trans_target, trans_source,
-        ["opencc -c opencc-t2s.json -i translations/zh_HK/LC_MESSAGES/messages.po -o translations/zh_CN/LC_MESSAGES/messages.po",
+        ["opencc -c opencc-t2s.json -i translations/zh/LC_MESSAGES/messages.po -o translations/zhs/LC_MESSAGES/messages.po",
          "pybabel compile --directory translations/ --domain messages"])
 
 Command(trans_source, "messages.pot",

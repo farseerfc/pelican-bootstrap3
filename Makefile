@@ -16,7 +16,7 @@ TRANS_TARGET=$(shell find -iname "messages.po")
 trans: $(patsubst %/messages.po,%/messages.mo,$(TRANS_TARGET))
 
 %/messages.mo: %/messages.po
-	opencc -c opencc-t2s.json -i translations/zh_HK/LC_MESSAGES/messages.po -o translations/zh_CN/LC_MESSAGES/messages.po
+	opencc -c opencc-t2s.json -i translations/zh/LC_MESSAGES/messages.po -o translations/zhs/LC_MESSAGES/messages.po
 	py3babel compile --directory translations/ --domain messages
 
 %/messages.po: messages.pot
