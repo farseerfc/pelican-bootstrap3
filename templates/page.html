@@ -56,12 +56,12 @@
                     <div class="col-lg-4 col-md-6">
                         {% import 'includes/translations.html' as translations with context %}
                         {{ translations.translations_for(page) }}
-                         <a onclick="$.get('{{SITEURL}}/{{page.slug}}.rst.html', function(data){$('#source-code').html(data)});$('#article-content').toggle();$('#source-content').toggle();" class="btn btn-primary" title="{% trans %}Show source code of this page{%endtrans%}"><i class="fa fa-code"></i></a>
+                         <a onclick="$.get('{{SITEURL}}/{{page.id}}.rst.html', function(data){$('#source-code').html(data)});$('#article-content').toggle();$('#source-content').toggle();" class="btn btn-primary" title="{% trans %}Show source code of this page{%endtrans%}"><i class="fa fa-code"></i></a>
                     </div>
                 </div>
                 </h1>
                 {% if PDF_PROCESSOR %}
-                    <a href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">
+                    <a href="{{ SITEURL }}/pdf/{{page.id}}.pdf">
                         get the pdf
                     </a>
                 {% endif %}
