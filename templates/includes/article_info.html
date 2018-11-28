@@ -16,7 +16,7 @@
     {% endif %}
 
     {% import 'includes/translations.html' as translations with context %}{{ translations.translations_for(article) }}
-    <a onclick="$.get('{{SITEURL}}/{{article.slug}}.rst.html', function(data){$('#source-code').html(data)});$('#article-content').toggle();$('#source-content').toggle();" class="btn btn-primary" title="{% trans %}Show source code of this page{%endtrans%}"><i class="fa fa-code"></i></a>
+    <a onclick="$.get('{{SITEURL}}/{{article.id}}.rst.html', function(data){$('#source-code').html(data)});$('#article-content').toggle();$('#source-content').toggle();" class="btn btn-primary" title="{% trans %}Show source code of this page{%endtrans%}"><i class="fa fa-code"></i></a>
     <!--<a href="{{SITEURL}}/{{article.slug}}.pdf" class="btn btn-primary" title="{% trans %}Show pdf version of this page{%endtrans%}" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
     <a href="{{SITEURL}}/{{article.slug}}.png" class="btn btn-primary" title="{% trans %}Show captured png of this page{%endtrans%}" target="_blank""><i class="fa fa-file-photo-o"></i></a>-->
 
