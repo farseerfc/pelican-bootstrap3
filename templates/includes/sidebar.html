@@ -7,7 +7,7 @@
         {% if ABOUT_ME %}
         {% include 'includes/aboutme.html' %}
         {% endif %}
-        
+
         {% if SOCIAL %}
         {% include 'includes/social.html' %}
         {% endif %}
@@ -53,7 +53,7 @@
             </div>
         {% endif %}
 
-            
+
 
         {% if DISPLAY_TAGS_ON_SIDEBAR %}
         {% include 'includes/sidebar_tags.html' %}
@@ -65,6 +65,10 @@
 
         {% if GITHUB_USER %}
         {% include 'includes/github.html' %}
+        {% endif %}
+
+        {% if OTHER_BLOG %}
+        {% include 'includes/sidebar_other_blog.html' %}
         {% endif %}
 
         {% if SIDEBAR_PROMOTION %}

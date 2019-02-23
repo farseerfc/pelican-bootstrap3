@@ -1,0 +1,14 @@
+{% extends "includes/sidebar_item.html" %}
+{% block sidebarxs %}hidden-xs{% endblock sidebarxs %}
+{% block sidebartitle %}
+<a href="{{ OTHER_BLOG }}">
+<i class="fa fa-home fa-lg"></i><span class="icon-label">{{ OTHER_BLOG_TITLE }}</span>
+</a>
+{% endblock sidebartitle %}
+{% block sidebarcontent %}
+    <div class="panel-body">
+        <div id="other_blog_posts">
+            <p class="list-group-item">Status updating...</p>
+        </div>
+    </div>
+{% endblock sidebarcontent %}
