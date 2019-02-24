@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-{% set sitelangname = dict(zh='zh-Hant', zhs="zh-Hans", jp='ja', en='en-us') %}
-<html lang="{% block html_lang %}{{ sitelangname[LOCALE[0].split('.')[0]] }}{% endblock %}"
+{% set sitelangname = dict(zh='zh-Hant', zhs='zh-Hans', jp='ja', en='en-us') %}
+<html lang="{% block html_lang %}{{ sitelangname[LOCALE[0].split('.')[0]] or 'zh-Hant' }}{% endblock %}"
       {% if USE_OPEN_GRAPH %}
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml"{% endif %}>
