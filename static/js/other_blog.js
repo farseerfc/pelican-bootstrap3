@@ -3,7 +3,7 @@ var other_blog = (function(){
     return $('<div/>').text(str).html();
   }
   function render(data, t){
-    var target = $(data).find('h2');
+    var target = $(data).find('.btn-lg > h2');
     var i = 0;
     var fragment = '<div class="list-group" id="other_blog">';
     for(i = 0; i < target.length; i++ ){
