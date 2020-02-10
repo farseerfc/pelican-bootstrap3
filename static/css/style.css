@@ -246,8 +246,13 @@ figure.floatcenter, .align-center {
 }
 
 .affix {
-    position: fixed;
-    top: 100px;
+    /* position: fixed;
+    top: 100px; */
+}
+
+.affix .toc {
+    overflow-y: auto;
+    max-height: calc(100vh - 130px);
 }
 
 .friend-head {
