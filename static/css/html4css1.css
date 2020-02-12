@@ -11,7 +11,9 @@ customize this style sheet.
 
 /* used to remove borders from tables and images */
 .borderless, table.borderless td, table.borderless th {
-  border: 0 }
+  border: 0;
+  table-layout: fixed;
+}
 
 table.borderless td, table.borderless th {
   /* Override padding for "table.docutils td" with "! important".
