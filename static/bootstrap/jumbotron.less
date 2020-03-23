@@ -58,14 +58,14 @@
     h5, .h5 { font-size: ceil(@font-size-h5 * 1.1); }
     h6, .h6 { font-size: ceil(@font-size-h6 * 1.1); }
 
-    p, ol, ul, td {
+    p, ol, ul, td, th {
       margin-bottom: (@jumbotron-padding / 2);
       font-size: ceil((@font-size-base * 1.1));
     }
   }
 
   @media screen and (min-width: @screen-md-min) {
-    p, ol, ul, td {
+    p, ol, ul, td, th {
       font-size: ceil((@font-size-base * 1.2));
     }
 
@@ -78,7 +78,7 @@
   }
 
   @media screen and (min-width: @screen-lg-min) {
-    p, ol, ul, td {
+    p, ol, ul, td, th {
       font-size: ceil(@font-size-base * 1.4);
     }
 
@@ -91,7 +91,7 @@
   }
 
   @media screen and (min-width: @screen-xl-min) {
-    p, ol, ul, td {
+    p, ol, ul, td, th {
       font-size: ceil(@font-size-base * 1.6);
     }
 
@@ -112,7 +112,7 @@
       .panel-heading {
         font-size: ceil((@font-size-base * 1.2));
       }
-      p, ol, ul, td {
+      p, ol, ul, td, th {
         font-size: ceil((@font-size-base * 1.1));
       }
     }
@@ -127,7 +127,7 @@
       .panel-heading {
         font-size: ceil((@font-size-base * 1.4));
       }
-      p, ol, ul, td {
+      p, ol, ul, td, th {
         font-size: ceil((@font-size-base * 1.2));
       }
     }
@@ -142,7 +142,7 @@
       .panel-heading {
         font-size: ceil((@font-size-base * 1.6));
       }
-      p, ol, ul, td {
+      p, ol, ul, td, th {
         font-size: ceil((@font-size-base * 1.4));
       }
     }
