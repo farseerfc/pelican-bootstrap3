@@ -89,14 +89,38 @@ a, a:hover {
     word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
-.entry-content a {
+.entry-content a.external {
     text-decoration: none;
-    border-bottom: 1px dotted;
+    color: #6B5594;
+    border-bottom: 2px dotted;
+    border-color: #6B5594;
 }
 
-.entry-content a:hover {
+.entry-content a.external:hover {
     text-decoration: none;
-    border-bottom: 1px solid;
+    color: #fff;
+    background-color: #6B5594;;
+    /* border-bottom: 1px solid; */
+}
+
+.entry-content a.external:visited {
+    text-decoration: none;
+    color: rgb(80, 66, 107);
+    /* border-bottom: 1px dotted; */
+    /* border-color: #6B5594; */
+}
+
+.entry-content a.external:visited:hover {
+    text-decoration: none;
+    color: rgb(190, 183, 204);
+    /* border-bottom: 1px dotted; */
+    /* border-color: #6B5594; */
+}
+
+.entry-content a.external::after {
+    content: "🔗";
+    font-size: 30%;
+    vertical-align: super;
 }
 
 .entry-content img {
