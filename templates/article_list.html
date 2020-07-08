@@ -7,19 +7,18 @@
             <article class="panel panel-primary">
                 <div class="panel-heading">
                     <div class="row">
-                        <div class="col-xl-19 col-lg-19 col-md-20 col-sm-19 col-xs-24">
+                        <div class="col-xl-20 col-lg-20 col-md-20 col-sm-19 col-xs-19">
                             <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-primary btn-lg"><h2>{{ article.title }}
                             </h2></a>
                         </div>
-                        <div class="col-xl-5 col-lg-5 col-md-4 col-sm-5 hidden-xs">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-xs-5">
                             {% import 'includes/translations.html' as translations with context %}
                             {{ translations.translations_for(article) }}
-                            <div>
-                            {% include 'includes/comment_count.html' %}
-                            </div>
+                            <span class="published">
+                                <time datetime="{{ article.date.isoformat() }}"><i class="fa fa-calendar"></i> {{ article.locale_date }}</time>
+                            </span>
                         </div>
                     </div>
-
                     {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
                         <span>
                             {% include "includes/article_info.html" %}
