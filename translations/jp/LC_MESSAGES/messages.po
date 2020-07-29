@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-03-17 16:32+0900\n"
+"POT-Creation-Date: 2020-07-10 23:34+0900\n"
 "PO-Revision-Date: 2014-12-10 19:22+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja_JP\n"
@@ -56,15 +56,15 @@ msgstr "%(author)s が書いた文章 - %(SITENAME)s"
 msgid "Authors - %(SITENAME)s"
 msgstr "著者一覧 - %(SITENAME)s"
 
-#: templates/base.html:119
+#: templates/base.html:120
 msgid "Toggle navigation"
 msgstr "ナビの切り替え"
 
-#: templates/base.html:215 templates/base.html:225 templates/search.html:4
+#: templates/base.html:216 templates/base.html:226 templates/search.html:4
 msgid "Search"
 msgstr "検索"
 
-#: templates/base.html:232
+#: templates/base.html:233
 msgid "All"
 msgstr "一覧"
 
