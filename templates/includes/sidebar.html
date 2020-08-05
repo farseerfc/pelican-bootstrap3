@@ -71,6 +71,10 @@
         {% include 'includes/sidebar_other_blog.html' %}
         {% endif %}
 
+        {% if TG_CHANNEL %}
+        {% include 'includes/sidebar_tgchannel.html' %}
+        {% endif %}
+
         {% if SIDEBAR_PROMOTION %}
         {% include 'includes/promotion.html' %}
         {% endif %}

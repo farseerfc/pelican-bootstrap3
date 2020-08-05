@@ -1,0 +1,14 @@
+{% extends "includes/sidebar_item.html" %}
+{% block sidebarxs %}hidden-xs{% endblock sidebarxs %}
+{% block sidebartitle %}
+<a href="{{ TG_CHANNEL_URL }}">
+<i class="fa fa-home fa-lg"></i><span class="icon-label">{{ TG_CHANNEL_TITLE }}</span>
+</a>
+{% endblock sidebartitle %}
+{% block sidebarcontent %}
+    <div class="panel-body" style="padding: 0px">
+        <div id="tg_channel_iframe">
+            <iframe frameborder="0" style="width:100%;height:500px" src="https://rants.nichi.workers.dev/{{ TG_CHANNEL }}"></iframe>
+        </div>
+    </div>
+{% endblock sidebarcontent %}
