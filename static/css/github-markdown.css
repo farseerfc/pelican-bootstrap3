@@ -13,6 +13,7 @@
   line-height: 1.5;
   word-wrap: break-word;
 
+  max-width: min(800px,50vw);
 }
 
 .markdown-body .pl-c {
