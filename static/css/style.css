@@ -366,3 +366,11 @@ table.translate-paragraph td,th {
     padding: 5px !important;
     overflow-y: auto;
 }
+
+.translate-collapse-btn {
+    float: right;
+}
+
+.translate-collapse-btn:hover span.badge{
+    background-color: #6B5594;
+}
