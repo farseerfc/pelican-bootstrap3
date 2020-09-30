@@ -89,6 +89,12 @@ a, a:hover {
     word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
+.entry-content a.internal {
+    text-decoration: none;
+    border-bottom: 2px dotted;
+    border-color: #6B5594;
+}
+
 .entry-content a.external {
     text-decoration: none;
     color: #6B5594;
